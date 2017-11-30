@@ -37,6 +37,18 @@
     <hr />
 
     <!-- TODO #2 - Loop over jobs map to display all job fields -->
+    <table>
+    <tr th:each="job : ${jobs}">
+    </tr>
+
+        <table>
+            <tr th:each="currentJob : ${jobs}">
+                <td th:text="${currentJob.key}">Key</td>
+                <td th:text="${currentJob.value}">Value</td>
+            </tr>
+        </table>
+    </table>
+
 
 </div>
 
